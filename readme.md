@@ -1,14 +1,15 @@
 <h1>The Arginine graph conversion tool is used to create NetworkX/GraphML networks using LibreOffice Draw.</h1>
 
-The tool can ead in SVG exported by LibreOffice Draw 25.8.0.4 (X86_64) and produce a GraphML object containing a directed graph, with arrows as drawn.
-Can read elements:
+The tool can ead in SVG exported by LibreOffice Draw 25.8.0.4 (X86_64) and produce a GraphML object containing a directed graph, with arrows as drawn.<br>
+
+The following elements are supported:
 - Rectangle
 - Connectors --> Connector Ends With Arrow
 
-In LibreOffice, draw an image using Rectangles and "Connector Ends With Arrow" elements, then export it with File --> Export --> SVG.  
-Set the "svg_file =" to point to the file of interest.
-The routine will extract the connectivity, rectangle text, and any fill color and export it to GraphML.
-This file type represents the network, and can be read by networkx and Cytoscape.
+Steps:<br>
+1. In LibreOffice, draw an image using Rectangles and "Connector Ends With Arrow" elements, then export it with File --> Export --> SVG.  
+2. Set the "svg_file =" line to point to the file of interest.
+3. The routine will extract the connectivity, rectangle text, and any fill color and export it to GraphML.
 
 - Use these tools:<br>
 <img width="287" height="84" alt="image" src="https://github.com/user-attachments/assets/e8d0c759-8ec4-4a01-8295-183ba1b9aee3" /><br>
