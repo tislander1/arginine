@@ -15,7 +15,7 @@ Use these tools:
 <img width="287" height="84" alt="image" src="https://github.com/user-attachments/assets/e8d0c759-8ec4-4a01-8295-183ba1b9aee3" />
 <img width="213" height="249" alt="image" src="https://github.com/user-attachments/assets/314b2c24-e060-4449-b25a-b6e23b2b8be7" />
 
-Make a drawing:
+- Make a drawing:<br>
 <img width="338" height="435" alt="image" src="https://github.com/user-attachments/assets/f0bf4af6-f8f1-4b9e-b6dd-d0e990f2afcd" />
 
 GraphML visualization in Cytoscape (in yFiles Hierarchical view):
