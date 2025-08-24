@@ -32,7 +32,9 @@ Steps:<br>
 
 Steps:
 1. Set the 'kegg_xml_file = ' line to point to the file of interest.
-2. The kegg_xml_to_graphml.py routine will extract the connectivity, assign colors, and export it to GraphML.
+2. The kegg_xml_to_graphml.py routine will extract the connectivity, assign colors, and export it to GraphML.<br>
+
+<img width="652" height="887" alt="image" src="https://github.com/user-attachments/assets/cd328076-c3de-45b0-855e-a005cad6499f" />
 
 
 
