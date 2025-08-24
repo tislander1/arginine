@@ -8,347 +8,383 @@
   <data key="d0">reaction</data>
   <data key="d1">rn:R11711</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00491']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="10">
   <data key="d0">compound</data>
   <data key="d1">C00062</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="9">
   <data key="d0">compound</data>
   <data key="d1">C00327</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="83">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00256</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K05597']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="30">
   <data key="d0">compound</data>
   <data key="d1">C00064</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="18">
   <data key="d0">compound</data>
   <data key="d1">C00014</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="82">
   <data key="d0">reaction</data>
   <data key="d1">rn:R09107</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01438']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="79">
   <data key="d0">compound</data>
   <data key="d1">C15532</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="80">
   <data key="d0">reaction</data>
   <data key="d1">rn:R07245</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K09065']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="90">
   <data key="d0">compound</data>
   <data key="d1">C00437</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="13">
   <data key="d0">compound</data>
   <data key="d1">C00169</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="68">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00248</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00262']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="107">
   <data key="d0">compound</data>
   <data key="d1">C00025</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="67">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00243 rn:R00248</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00261']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="66">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00243</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00260', 'K15371']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="65">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00557</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K13240', 'K13241', 'K13242', 'K13427']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="64">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00552</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01478']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="63">
   <data key="d0">reaction</data>
   <data key="d1">rn:R13420</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01427', 'K01428', 'K01429', 'K01430', 'K14048']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="34">
   <data key="d0">compound</data>
   <data key="d1">C00086</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="123">
   <data key="d0">compound</data>
   <data key="d1">C00014</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="121">
   <data key="d0">compound</data>
   <data key="d1">C00288</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="62">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00005</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01457', 'K14541']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="36">
   <data key="d0">compound</data>
   <data key="d1">C01010</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="38">
   <data key="d0">compound</data>
   <data key="d1">C00011</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="61">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00774</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01941', 'K14541']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="60">
   <data key="d0">reaction</data>
   <data key="d1">rn:R02282</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00620']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="11">
   <data key="d0">compound</data>
   <data key="d1">C00077</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="59">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00669</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01438']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="58">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00669</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01438']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="57">
   <data key="d0">reaction</data>
   <data key="d1">rn:R02283</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00818', 'K00821']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="24">
   <data key="d0">compound</data>
   <data key="d1">C01250</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="56">
   <data key="d0">reaction</data>
   <data key="d1">rn:R03443</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00145', 'K12659']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="22">
   <data key="d0">compound</data>
   <data key="d1">C04133</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="55">
   <data key="d0">reaction</data>
   <data key="d1">rn:R02649</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00930', 'K12659', 'K22478']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="20">
   <data key="d0">compound</data>
   <data key="d1">C00624</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="54">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00259</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00618', 'K00619', 'K00620', 'K11067', 'K14681', 'K14682', 'K22476', 'K22477', 'K22478']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="53">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00551</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01476']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="52">
   <data key="d0">reaction</data>
   <data key="d1">rn:R01086</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01755', 'K14681']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="8">
   <data key="d0">compound</data>
   <data key="d1">C03406</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="17">
   <data key="d0">compound</data>
   <data key="d1">C00122</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="50">
   <data key="d0">reaction</data>
   <data key="d1">rn:R01954</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01940']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="16">
   <data key="d0">compound</data>
   <data key="d1">C00049</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="49">
   <data key="d0">reaction</data>
   <data key="d1">rn:R01398</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00611']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="48">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00149</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01948']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="47">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00150</data>
   <data key="d2">reversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00926']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="46">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00253</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01915']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="45">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00256</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K05597']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="88">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00355</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00811', 'K00812', 'K00813', 'K11358', 'K14454', 'K14455']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="85">
   <data key="d0">compound</data>
   <data key="d1">C00026</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="89">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00258</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K00814', 'K14260', 'K14272']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="100">
   <data key="d0">reaction</data>
   <data key="d1">rn:R10929</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K19412', 'K25032']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="96">
   <data key="d0">compound</data>
   <data key="d1">C20948</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="101">
   <data key="d0">reaction</data>
   <data key="d1">rn:R10930</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K05828']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="97">
   <data key="d0">compound</data>
   <data key="d1">C20949</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="102">
   <data key="d0">reaction</data>
   <data key="d1">rn:R10931</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K05829']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="98">
   <data key="d0">compound</data>
   <data key="d1">C20950</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="103">
   <data key="d0">reaction</data>
   <data key="d1">rn:R10932</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K05830']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="99">
   <data key="d0">compound</data>
   <data key="d1">C20951</data>
-  <data key="d4">#FFAAAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="104">
   <data key="d0">reaction</data>
   <data key="d1">rn:R10933</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K05831']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="112">
   <data key="d0">reaction</data>
   <data key="d1">rn:R13308</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K27542', 'K27545']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="119">
   <data key="d0">compound</data>
   <data key="d1">C00014</data>
-  <data key="d4">#AAFFAA</data>
+  <data key="d4">#AAAAFF</data>
 </node>
 <node id="115">
   <data key="d0">reaction</data>
   <data key="d1">rn:R00575</data>
   <data key="d2">irreversible</data>
-  <data key="d3">[]</data>
+  <data key="d3">['K01954', 'K01955', 'K01956', 'K11540', 'K11541']</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <edge source="84" target="9"/>
 <edge source="10" target="84"/>

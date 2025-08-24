@@ -54,21 +54,21 @@ def get_graphml(graphml_file, reactions, compounds, orthology):
         substrates = reaction['substrates']
         products = reaction['products']
 
-        ko = sorted(orthology.get(reaction_id, []))
+        ko = sorted(orthology.get(reaction_name, []))
         
         # add the reaction as a node
-        G.add_node(reaction_id, type='reaction', name=reaction_name, reaction_type=reaction_type, ko=str(ko))
+        G.add_node(reaction_id, type='reaction', name=reaction_name, reaction_type=reaction_type, ko=str(ko), color ='#FFAAAA')
         
         # add the substrates as nodes and connect them to the reaction
         for substrate in substrates:
             substrate_name = compounds.get(substrate, substrate)
-            G.add_node(substrate, type='compound', name=substrate_name, color ='#FFAAAA')
+            G.add_node(substrate, type='compound', name=substrate_name, color ='#AAAAFF')
             G.add_edge(substrate, reaction_id)
         
         # add the products as nodes and connect them to the reaction
         for product in products:
             product_name = compounds.get(product, product)
-            G.add_node(product, type='compound', name=product_name, color ='#AAFFAA')
+            G.add_node(product, type='compound', name=product_name, color ='#AAAAFF')
             G.add_edge(reaction_id, product)
     return G
 
