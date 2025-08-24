@@ -16,6 +16,7 @@ def get_boxes_and_connectors(svg_file):
     # find any boxes in the SVG file
     # get all elements with <g class="com.sun.star.drawing.CustomShape">
     boxes = []
+    box_text = {}
     elements = root.findall(".//{http://www.w3.org/2000/svg}g[@class='com.sun.star.drawing.CustomShape']")
     # for each element, get the <g id="some id">.  If g is not None, get the x, y, width, height attributes of the <rect> element inside the <g> element
     for element in elements:
@@ -37,6 +38,7 @@ def get_boxes_and_connectors(svg_file):
                 this_box["text"] = text
             if rect is not None and text_elem is not None:
                 boxes.append(this_box)
+                box_text[id] = text
 
 
     # find any connectors in the SVG file
@@ -109,9 +111,9 @@ def get_boxes_and_connectors(svg_file):
 
             if x1 is not None and y1 is not None and x2 is not None and y2 is not None:
                 connectors.append({"id": id, "start": (x_start, y_start), "end": (x_end, y_end)})
-    return boxes, connectors
+    return boxes, box_text, connectors
 
-def get_connectivity_of_boxes(boxes, connectors):
+def get_connectivity_of_boxes(boxes, box_text, connectors):
     # Each box has an x, y, width, height
     # Each connector has an x_start, y_start, x_end, y_end and generally connects to the middle of a side of a box
     # We want to determine which boxes are connected by which connectors
@@ -124,7 +126,14 @@ def get_connectivity_of_boxes(boxes, connectors):
     # Determine which boxes are *closest* to the start and end of each connector
     G = nx.DiGraph()
     for box in boxes:
-        G.add_node(box["id"], label=box.get("text", box["id"]))
+        # add the box id and text as attributes
+        G.add_node(box["id"])
+        G.nodes[box["id"]]['text'] = box_text.get(box["id"], "")
+        G.nodes[box['id']]['id'] = box['id']
+    
+    # For each connector, find the closest box to the start and end points
+    # and add an edge from the start box to the end box
+    # If no box is found, print a message
     for connector in connectors:
         start_box = None
         end_box = None
@@ -137,19 +146,21 @@ def get_connectivity_of_boxes(boxes, connectors):
                 end_dist = ((connector["end"][0] - side_pos[0]) ** 2 + (connector["end"][1] - side_pos[1]) ** 2) ** 0.5
                 if start_dist < min_start_dist:
                     min_start_dist = start_dist
-                    start_box = box["id"]
+                    start_box = box['id']
                 if end_dist < min_end_dist:
                     min_end_dist = end_dist
-                    end_box = box["id"]
+                    end_box = box['id']
         if start_box is not None and end_box is not None:
-            G.add_edge(start_box, end_box, id=connector["id"])
-            print(f"Connector {connector['id']} connects {start_box} to {end_box}")
-        return G
+            G.add_edge(start_box, end_box, id=connector["id"], )
+            print(f'''Connector {connector['id']} connects {start_box} ({box_text[start_box]}) ---> {end_box} ({box_text[end_box]})''')
+        else:
+            print(f"Connector {connector['id']} could not be connected to boxes")
+    return G
 
 if __name__ == '__main__':
     svg_file = 'three boxes in libre draw.svg'
 
-    boxes, connectors = get_boxes_and_connectors(svg_file)
+    boxes, box_text, connectors = get_boxes_and_connectors(svg_file)
     
     print("Boxes:")
     for box in boxes:
@@ -158,7 +169,10 @@ if __name__ == '__main__':
     for connector in connectors:
         print(connector)
 
-    networkx_graph = get_connectivity_of_boxes(boxes, connectors)
+    networkx_graph = get_connectivity_of_boxes(boxes, box_text, connectors)
+
+    # save the graph to a graphml file
+    nx.write_graphml(networkx_graph, "three_boxes.graphml")
 
 
 

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="id" attr.type="string"/>
+<key id="d1" for="node" attr.name="id" attr.type="string"/>
+<key id="d0" for="node" attr.name="text" attr.type="string"/>
+<graph edgedefault="directed"><node id="id3">
+  <data key="d0">Item A</data>
+  <data key="d1">id3</data>
+</node>
+<node id="id4">
+  <data key="d0">Item B - Try this again</data>
+  <data key="d1">id4</data>
+</node>
+<node id="id6">
+  <data key="d0">Item C</data>
+  <data key="d1">id6</data>
+</node>
+<edge source="id3" target="id4">
+  <data key="d2">id5</data>
+</edge>
+<edge source="id4" target="id6">
+  <data key="d2">id7</data>
+</edge>
+</graph></graphml>
