@@ -1,6 +1,9 @@
-<h1>The Arginine graph conversion tool is used to:<br>
-(1) create NetworkX/GraphML networks using LibreOffice Draw.
-(2) create NetworkX/GraphML networks from KeggXML.</h1>
+<h1>
+The Arginine graph conversion tool is used to:<br>
+<ol><li>create NetworkX/GraphML networks using LibreOffice Draw</li>
+<li>create NetworkX/GraphML networks from KeggXML.</li>
+</ol>
+</h1>
 
 
 <h2>LibreOffice Draw to GraphML</h2>
