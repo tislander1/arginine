@@ -6,4 +6,3 @@ Can read elements:
 - Rectangle
 - Connectors --> Connector Ends With Arrow
 
-To do: Determine how the Rectangles are connected by the arrows, and output a networkx graph
