@@ -193,7 +193,7 @@ def get_connectivity_of_boxes(boxes, box_text, connectors):
     return G
 
 if __name__ == '__main__':
-    svg_file = 'three boxes in libre draw.svg'
+    svg_file = 'diverge_and_converge.svg'
 
     boxes, box_text, connectors = get_boxes_and_connectors(svg_file)
     
@@ -207,7 +207,9 @@ if __name__ == '__main__':
     networkx_graph = get_connectivity_of_boxes(boxes, box_text, connectors)
 
     # save the graph to a graphml file
-    nx.write_graphml(networkx_graph, "three_boxes.graphml")
+    output_file = svg_file.replace('.svg', '.graphml')
+    nx.write_graphml(networkx_graph, output_file)
+    print(f"Graph saved to {output_file}")
 
 
 
