@@ -108,14 +108,43 @@ def get_boxes_and_connectors(svg_file):
                 y_end = None
 
             if x1 is not None and y1 is not None and x2 is not None and y2 is not None:
-                connectors.append({"id": id, "x_start": x_start, "y_start": y_start, "x_end": x_end, "y_end": y_end})
+                connectors.append({"id": id, "start": (x_start, y_start), "end": (x_end, y_end)})
     return boxes, connectors
 
 def get_connectivity_of_boxes(boxes, connectors):
     # Each box has an x, y, width, height
-    # Each connector has an x_start, y_start, x_end, y_end
+    # Each connector has an x_start, y_start, x_end, y_end and generally connects to the middle of a side of a box
     # We want to determine which boxes are connected by which connectors
-    pass
+    
+    for box in boxes:
+        box["east"] = (box["x"] + box["width"], box["y"] + box["height"] / 2)
+        box["west"] = (box["x"], box["y"] + box["height"] / 2)
+        box["north"] = (box["x"] + box["width"] / 2, box["y"])
+        box["south"] = (box["x"] + box["width"] / 2, box["y"] + box["height"])
+    # Determine which boxes are *closest* to the start and end of each connector
+    G = nx.DiGraph()
+    for box in boxes:
+        G.add_node(box["id"], label=box.get("text", box["id"]))
+    for connector in connectors:
+        start_box = None
+        end_box = None
+        min_start_dist = float('inf')
+        min_end_dist = float('inf')
+        for box in boxes:
+            for side in ['east', 'west', 'north', 'south']:
+                side_pos = box[side]
+                start_dist = ((connector["start"][0] - side_pos[0]) ** 2 + (connector["start"][1] - side_pos[1]) ** 2) ** 0.5
+                end_dist = ((connector["end"][0] - side_pos[0]) ** 2 + (connector["end"][1] - side_pos[1]) ** 2) ** 0.5
+                if start_dist < min_start_dist:
+                    min_start_dist = start_dist
+                    start_box = box["id"]
+                if end_dist < min_end_dist:
+                    min_end_dist = end_dist
+                    end_box = box["id"]
+        if start_box is not None and end_box is not None:
+            G.add_edge(start_box, end_box, id=connector["id"])
+            print(f"Connector {connector['id']} connects {start_box} to {end_box}")
+        return G
 
 if __name__ == '__main__':
     svg_file = 'three boxes in libre draw.svg'
@@ -129,7 +158,7 @@ if __name__ == '__main__':
     for connector in connectors:
         print(connector)
 
-    get_connectivity_of_boxes(boxes, connectors)
+    networkx_graph = get_connectivity_of_boxes(boxes, connectors)
 
 
 
