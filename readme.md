@@ -1,5 +1,4 @@
-Attempt to produce a graph as complicated as 
-Arginine biosynthesis highlighted.png (ko00220)
+This conversion tool is used to create GraphML networks using LibreOffice Draw.
 
 Read in SVG exported by LibreOffice Draw 25.8.0.4 (X86_64)
 Can read elements:
