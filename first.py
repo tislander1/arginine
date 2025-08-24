@@ -28,7 +28,15 @@ def get_boxes_and_connectors(svg_file):
                 y_box = float(rect.get("y"))
                 width_box = float(rect.get("width"))
                 height_box = float(rect.get("height"))
-                boxes.append({"id": id, "x": x_box, "y": y_box, "width": width_box, "height": height_box})
+                this_box = {"id": id, "x": x_box, "y": y_box, "width": width_box, "height": height_box}
+            # check if there is a <text> element inside the <g> element
+            text_elem = g.find("{http://www.w3.org/2000/svg}text")
+            if text_elem is not None:
+                # any test will be in the main page, not in an element
+                text = "".join(text_elem.itertext())
+                this_box["text"] = text
+            if rect is not None and text_elem is not None:
+                boxes.append(this_box)
 
 
     # find any connectors in the SVG file
@@ -104,6 +112,9 @@ def get_boxes_and_connectors(svg_file):
     return boxes, connectors
 
 def get_connectivity_of_boxes(boxes, connectors):
+    # Each box has an x, y, width, height
+    # Each connector has an x_start, y_start, x_end, y_end
+    # We want to determine which boxes are connected by which connectors
     pass
 
 if __name__ == '__main__':
