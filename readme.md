@@ -1,6 +1,6 @@
-<h1>The Arginine graph conversion tool is used to create GraphML networks using LibreOffice Draw.</h1>
+<h1>The Arginine graph conversion tool is used to create NetworkX/GraphML networks using LibreOffice Draw.</h1>
 
-Read in SVG exported by LibreOffice Draw 25.8.0.4 (X86_64)
+The tool can ead in SVG exported by LibreOffice Draw 25.8.0.4 (X86_64) and produce a GraphML object containing a directed graph, with arrows as drawn.
 Can read elements:
 - Rectangle
 - Connectors --> Connector Ends With Arrow
