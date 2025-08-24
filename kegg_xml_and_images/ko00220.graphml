@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d3" for="node" attr.name="ko" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d4" for="node" attr.name="color" attr.type="string"/>
+<key id="d3" for="node" attr.name="ko" attr.type="string"/>
 <key id="d2" for="node" attr.name="reaction_type" attr.type="string"/>
 <key id="d1" for="node" attr.name="name" attr.type="string"/>
 <key id="d0" for="node" attr.name="type" attr.type="string"/>
@@ -12,10 +13,12 @@
 <node id="10">
   <data key="d0">compound</data>
   <data key="d1">C00062</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="9">
   <data key="d0">compound</data>
   <data key="d1">C00327</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="83">
   <data key="d0">reaction</data>
@@ -26,10 +29,12 @@
 <node id="30">
   <data key="d0">compound</data>
   <data key="d1">C00064</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="18">
   <data key="d0">compound</data>
   <data key="d1">C00014</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="82">
   <data key="d0">reaction</data>
@@ -40,6 +45,7 @@
 <node id="79">
   <data key="d0">compound</data>
   <data key="d1">C15532</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="80">
   <data key="d0">reaction</data>
@@ -50,10 +56,12 @@
 <node id="90">
   <data key="d0">compound</data>
   <data key="d1">C00437</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="13">
   <data key="d0">compound</data>
   <data key="d1">C00169</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="68">
   <data key="d0">reaction</data>
@@ -64,6 +72,7 @@
 <node id="107">
   <data key="d0">compound</data>
   <data key="d1">C00025</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="67">
   <data key="d0">reaction</data>
@@ -98,14 +107,17 @@
 <node id="34">
   <data key="d0">compound</data>
   <data key="d1">C00086</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="123">
   <data key="d0">compound</data>
   <data key="d1">C00014</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="121">
   <data key="d0">compound</data>
   <data key="d1">C00288</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="62">
   <data key="d0">reaction</data>
@@ -116,10 +128,12 @@
 <node id="36">
   <data key="d0">compound</data>
   <data key="d1">C01010</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="38">
   <data key="d0">compound</data>
   <data key="d1">C00011</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="61">
   <data key="d0">reaction</data>
@@ -136,6 +150,7 @@
 <node id="11">
   <data key="d0">compound</data>
   <data key="d1">C00077</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="59">
   <data key="d0">reaction</data>
@@ -158,6 +173,7 @@
 <node id="24">
   <data key="d0">compound</data>
   <data key="d1">C01250</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="56">
   <data key="d0">reaction</data>
@@ -168,6 +184,7 @@
 <node id="22">
   <data key="d0">compound</data>
   <data key="d1">C04133</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="55">
   <data key="d0">reaction</data>
@@ -178,6 +195,7 @@
 <node id="20">
   <data key="d0">compound</data>
   <data key="d1">C00624</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="54">
   <data key="d0">reaction</data>
@@ -200,10 +218,12 @@
 <node id="8">
   <data key="d0">compound</data>
   <data key="d1">C03406</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="17">
   <data key="d0">compound</data>
   <data key="d1">C00122</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="50">
   <data key="d0">reaction</data>
@@ -214,6 +234,7 @@
 <node id="16">
   <data key="d0">compound</data>
   <data key="d1">C00049</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="49">
   <data key="d0">reaction</data>
@@ -254,6 +275,7 @@
 <node id="85">
   <data key="d0">compound</data>
   <data key="d1">C00026</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="89">
   <data key="d0">reaction</data>
@@ -270,6 +292,7 @@
 <node id="96">
   <data key="d0">compound</data>
   <data key="d1">C20948</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="101">
   <data key="d0">reaction</data>
@@ -280,6 +303,7 @@
 <node id="97">
   <data key="d0">compound</data>
   <data key="d1">C20949</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="102">
   <data key="d0">reaction</data>
@@ -290,6 +314,7 @@
 <node id="98">
   <data key="d0">compound</data>
   <data key="d1">C20950</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="103">
   <data key="d0">reaction</data>
@@ -300,6 +325,7 @@
 <node id="99">
   <data key="d0">compound</data>
   <data key="d1">C20951</data>
+  <data key="d4">#FFAAAA</data>
 </node>
 <node id="104">
   <data key="d0">reaction</data>
@@ -316,6 +342,7 @@
 <node id="119">
   <data key="d0">compound</data>
   <data key="d1">C00014</data>
+  <data key="d4">#AAFFAA</data>
 </node>
 <node id="115">
   <data key="d0">reaction</data>
