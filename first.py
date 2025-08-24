@@ -3,6 +3,25 @@ import xml.etree.ElementTree as ET
 import re
 import networkx as nx
 
+def rgb_to_hex(r, g, b):
+    """
+    Converts RGB values to a HEX color code.
+
+    Parameters:
+        r (int): Red component (0-255)
+        g (int): Green component (0-255)
+        b (int): Blue component (0-255)
+
+    Returns:
+        str: HEX color code in the format #RRGGBB
+    """
+    # Validate input ranges
+    if not (0 <= r <= 255 and 0 <= g <= 255 and 0 <= b <= 255):
+        raise ValueError("RGB values must be in the range 0-255.")
+
+    # Convert to HEX and format as #RRGGBB
+    return "#{:02X}{:02X}{:02X}".format(r, g, b)
+
 def get_boxes_and_connectors(svg_file):
     # Parse the XML file
     tree = ET.parse(svg_file)
@@ -37,8 +56,22 @@ def get_boxes_and_connectors(svg_file):
                 text = "".join(text_elem.itertext())
                 this_box["text"] = text
             if rect is not None and text_elem is not None:
-                boxes.append(this_box)
-                box_text[id] = text
+                # get all path elements inside the <g> element.  If one of them
+                # has a fill attribute that is not 'none', then get the fill attribute which will be the color of the box
+                this_box["color"] = (255, 255, 255)
+                paths = g.findall("{http://www.w3.org/2000/svg}path")
+                for path in paths:
+                    fill = path.get("fill")
+                    if fill != 'none':
+                        color_text = fill
+                        # get the red, green, blue components of the color, which will have the form "rgb(0,169,51)"
+                        match = re.match(r'rgb\((\d+),(\d+),(\d+)\)', color_text)
+                        if match:
+                            color = (int(match.group(1)), int(match.group(2)), int(match.group(3)))
+                            this_box["color"] = color
+                        break
+            boxes.append(this_box)
+            box_text[id] = text
 
 
     # find any connectors in the SVG file
@@ -130,6 +163,8 @@ def get_connectivity_of_boxes(boxes, box_text, connectors):
         G.add_node(box["id"])
         G.nodes[box["id"]]['text'] = box_text.get(box["id"], "")
         G.nodes[box['id']]['id'] = box['id']
+        color = box.get('color', (255, 255, 255))
+        G.nodes[box['id']]['color'] = rgb_to_hex(*color)
     
     # For each connector, find the closest box to the start and end points
     # and add an edge from the start box to the end box
